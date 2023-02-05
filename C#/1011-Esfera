@@ -1,0 +1,12 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+        double volume, pi = 3.14159;
+        int R = int.Parse(Console.ReadLine());
+        volume = ( 4.0 / 3) * pi * Math.Pow(R,3);
+        Console.WriteLine("VOLUME = "+volume.ToString("F3"));
+       
+    }
+}

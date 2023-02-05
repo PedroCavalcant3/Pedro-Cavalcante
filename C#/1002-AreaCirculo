@@ -1,0 +1,18 @@
+using System; 
+
+
+namespace bee { class Program { static void Main(string[] args) { 
+        double raio, area, pi = 3.14159;
+
+        raio = double.Parse(Console.ReadLine());
+
+        area = (raio * raio) * pi;
+
+        area = Math.Round(area, 4, MidpointRounding.AwayFromZero);
+
+        Console.WriteLine("A=" + area.ToString("0.0000"));
+        Console.Clear();
+    }
+}
+
+}

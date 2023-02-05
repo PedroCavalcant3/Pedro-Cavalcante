@@ -1,0 +1,18 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+         string input = Console.ReadLine();    
+        string[] value = input.Split(' ');
+        int a = int.Parse(value[0]);
+        int b = int.Parse(value[1]);
+        int c = int.Parse(value[2]);
+
+        int maior = Math.Max(a,b);
+        int absolute = Math.Max(maior,c);
+
+        Console.WriteLine(absolute + " eh o maior");
+    }
+}

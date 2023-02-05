@@ -1,0 +1,7 @@
+# - python *- coding: utf-8 -*-
+num = int(input())
+hor = int(input())
+sal = float(input())
+salary=(hor*sal)
+print(f'NUMBER = {num}')
+print(f'SALARY = U$ {salary:.2f}')

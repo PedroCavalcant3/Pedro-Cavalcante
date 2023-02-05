@@ -1,0 +1,22 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+            string line1 = Console.ReadLine();
+            string line2 = Console.ReadLine();
+
+            string[] values1 = line1.Split(' ');
+            int codPeca1 = int.Parse(values1[0]);
+            int numPecas1 = int.Parse(values1[1]);
+            double valorPeca1 = double.Parse(values1[2]);
+
+            string[] values2 = line2.Split(' ');
+            int codPeca2 = int.Parse(values2[0]);
+            int numPecas2 = int.Parse(values2[1]);
+            double valorPeca2 = double.Parse(values2[2]);
+
+            double total = (double)((numPecas1 * valorPeca1) + (numPecas2 * valorPeca2));
+            Console.WriteLine("VALOR A PAGAR: R$ " + total.ToString("F"));
+    }
+}

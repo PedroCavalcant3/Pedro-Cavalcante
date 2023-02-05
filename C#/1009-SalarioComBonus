@@ -1,0 +1,17 @@
+using System; 
+
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        double SALARIO, VENDAS, TOTAL;
+        Console.ReadLine();
+        SALARIO = double.Parse(Console.ReadLine());
+        VENDAS = double.Parse(Console.ReadLine());
+        TOTAL = (VENDAS * 0.15) + SALARIO;
+
+        Console.WriteLine("TOTAL = R$ " + TOTAL.ToString("F"));
+    }
+
+}
